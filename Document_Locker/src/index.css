@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MattBlack Theme */
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://rsms.me/inter/inter.css") format("css");
+  }
+
+  html,
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+
+  a {
+    color: #3b82f6;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded text-white;
+  }
+
+  .btn-blue {
+    @apply bg-blue-500;
+  }
+
+  .btn-red {
+    @apply bg-red-500;
+  }
+
+  .form-input {
+    @apply p-2 border rounded text-black; /* Set text color to black */
+  }
+
+  .btn-green {
+    @apply bg-green-500;
+  }
+
+  .form-input {
+    @apply p-2 border rounded;
+  }
+
+  .table {
+    @apply w-full border-collapse;
+  }
+
+  .table th,
+  .table td {
+    @apply border px-4 py-2;
+  }
+
+  .border-l {
+    @apply border-l;
+  }
+
+  .border-t {
+    @apply border-t;
+  }
+
+  .border-r {
+    @apply border-r;
+  }
+
+  .border-b {
+    @apply border-b;
+  }
+}
+
+@layer utilities {
+  .underline {
+    @apply underline;
+  }
+}
