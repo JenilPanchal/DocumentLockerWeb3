@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
 //import documentSafeContract from "../../artifacts/contracts/DocumentSafe.sol/DocumentSafe.json";
 
-
-
-
 import "./index.css";
 
 function App() {
@@ -97,10 +94,10 @@ function App() {
   }, [contract, accounts]);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-8">
+    <div className="min-h-screen bg-dark-pink text-white p-8">
       <>
         <button
-          className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
+          className="bg-pink-500 text-white px-4 py-2 rounded mb-4"
           onClick={() =>
             window.ethereum.request({ method: "eth_requestAccounts" })
           }
@@ -175,7 +172,7 @@ function App() {
             />
           </div>
           <button
-            className="bg-blue-500 text-white px-4 py-2 rounded"
+            className="bg-pink-500 text-white px-4 py-2 rounded"
             onClick={handleStoreDocument}
           >
             Store Document
