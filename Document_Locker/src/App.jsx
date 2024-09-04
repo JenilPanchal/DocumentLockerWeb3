@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
-//import documentSafeContract from "../../artifacts/contracts/DocumentSafe.sol/DocumentSafe.json";
+//import documentSafeContract from "../artifacts/contracts/DocumentSafe.sol/DocumentSafe.json";
 
 import "./index.css";
 
@@ -95,6 +95,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-dark-pink text-white p-8">
+      <h1 className="text-4xl font-bold mb-6 text-center">DocumentLocker</h1>
       <>
         <button
           className="bg-pink-500 text-white px-4 py-2 rounded mb-4"
